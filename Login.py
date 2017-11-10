@@ -1,6 +1,6 @@
 #/usr/bin/env python
 #_*_ coding:utf-8 _*_
-__author__ = "Yorick"
+__author__ = "Bill"
 
 
 import os
@@ -59,7 +59,7 @@ else:
     # 字符串拼接用户信息
     for info in user_info.keys():
         if info == "total":
-            userInfo = "%s %s %s \n" % (info, user_info[info]["flag"], user_info[info]["flag"])
+            userInfo = "%s %s %s \n" % (info, 0, 0)
         else:
             userInfo = "%s %s %s \n" % (info, user_info[info]["password"], user_info[info]["times"])
         UserInfo = "%s%s" % (UserInfo, userInfo)
